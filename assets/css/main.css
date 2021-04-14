@@ -1,0 +1,18 @@
+body{
+
+}
+.item1 {grid-area: header;border:1px solid red;}
+.item2 {grid-area: hero; border:1px solid green;}
+.item3 {grid-area: submenu; ;border:1px solid #000;}
+.item4 {grid-area: main; ;border:1px solid pink;}
+.item5 {grid-area: footer; ;border:1px solid yellow;}
+
+.container-grid{
+	display: grid;
+	grid-template-areas: 
+	'header header header header header' 
+	'hero hero hero hero hero' 
+	'submenu main main main main' 
+	'submenu footer footer footer footer';
+	grid-gap: 10px;
+}
